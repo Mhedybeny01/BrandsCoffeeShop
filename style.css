@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.section1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(imgback1.png);
+}
+
+.section1 .navbar{
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  
+
+}
+
+.navbar img{
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.section1 .navbar .links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    list-style-type: none;
+}
+.section1 .navbar .links ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+/* -----------------------login ----------------*/
+.contentLog{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+.login{
+    position: absolute;
+    top:-300px;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+.back.bk{
+    position: absolute;
+    left: 330px;
+    top: 30px;
+    cursor: pointer;
+}
+.back i{
+    font-size: 30px;
+}
+.login.check {
+    top: 300px; /* Position when class 'check' is added */
+}
+
+.contentLog label {
+    text-align: left; 
+    width: 64%;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: -5px;
+}
+.contentLog input{
+    padding: 10px 40px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.625);
+}
+.contentLog .loginbtn{
+    margin-top: 15px;
+    padding: 8px 100px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+.contentLog p{
+    font-weight: 500;
+}
+.facebook i{
+    font-size: 20px;
+}
+.google i{
+    font-size: 20px;
+}
+.facebook{
+    
+    padding: 5px 40px;
+    background-color: rgb(68, 56, 239);
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+.google{
+    
+    padding: 5px 40px;
+    background-color: rgb(20, 228, 68);
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+/*------------------- fin style login ---------------------*/
+.section1 .navbar .links ul li a:after {
+        content: "";
+        width: 0;
+        background-color: rgb(151, 147, 20);
+        display: block;
+        height: 3px;
+        transition: 0.4s;
+}
+.section1 .navbar .links ul li a:hover::after {
+    width: 100%;
+}
+.section1 .navbar .icnsSocial{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.section1 .bodysection1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.bodysection1 .t1 h1{
+    font-size: 40px;
+}
+.bodysection1 .t1 h3{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.bodysection1 .t1 button{
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.scroll{
+    position: fixed;
+    bottom: 30px;
+    right: -50px;
+    transition: 0.4s;
+}
+.scroll .scoorUp i{
+    font-size: 40px;
+    cursor: pointer;
+}
+.scroll.show{
+    right: 50px;
+}
+.logingorsingup{
+    position: fixed;
+    bottom: 800px;
+    right: 10px;
+    transition: 0.4s;
+ 
+}
+.lg{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.btn01{
+    margin-top: 15px;
+    padding: 5px 20px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+    width: 300px;
+   
+}
+
+.logingorsingup.sh{
+    bottom: 500px;
+
+}
+.srch .btn02{
+    margin-top: 15px;
+    padding: 5px 20px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.srch input{
+    padding: 5px 20px;
+}
+.srch{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    position: fixed;
+    bottom: 800px;
+    right: 20px;
+    transition: 0.4s;
+}
+
+.srch.open{
+    position: fixed;
+    bottom: 550px;
+}
+/* section 2 */
+
+.section2{
+    height: 70vh;
+    width: 100%;
+    
+}
+.section2 .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transform:translateY(50%);
+    transition: 0.6s;
+    opacity: 0;
+    display: none;
+}
+.title.show2{
+    opacity: 1;
+    transform:translateY(0%);
+}
+
+.title h2{
+    font-size: 30px;
+}
+
+
+
+.section2 .categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    display: none;
+    opacity: 0;
+    transform: translateY(50px); /* Move the section down initially */
+    transition: 0.6s;
+}
+.categories.show {
+    opacity: 1;
+    transform: translateY(0); /* Move the section back to its original position */
+}
+
+.typesCoffee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.typesCoffee img{
+    height: 200px;
+    width: 200px;
+}
+
+.typesCoffee p{
+    margin-top: 15px;
+}
+
+
+
+/* section 3*/
+
+.section3{
+    background-image: url(backsec3.png);
+    width: 100%;
+    height: 60vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.6s;
+    
+}
+.section3.show3{
+    opacity: 1;
+    transform: translateX(0%);
+    
+}
+
+.section3 .infoorder p{
+    width: 700px;
+    margin-top: 10px;
+}
+.infoorder h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.infoorder .dow{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0px;
+}
+
+.infoorder .dow a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.infoorder .dow a i{
+    font-size: 20px;
+    margin: 8px;
+}
+
+.infoorder .btns{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.infoorder .btns .readmore{
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/*section 4*/
+
+.section4{
+    height: 86vh;
+   
+}
+
+.section4 .title2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+    display: none;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: 0.6s;
+}
+.title2.show4{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.allmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 100px;
+}
+.caffee1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    border: 1px solid transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    padding: 10px 30px;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.menu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px; 
+}
+#mn1{
+    display: none;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: 0.6s;
+}
+#mn1.show5{
+    opacity: 1;
+    transform: translateY(0%)
+}
+
+
+#mn2{
+    display: none;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 0.6s;
+    display: none;
+}
+#mn2.show6{
+    opacity: 1;
+    transform: translateY(0%)
+}
+.menu1 .caffee1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.caffee1 h2{
+    font-weight: 600;
+    font-size: 16px;
+}
+.caffee1:hover{
+    background-color: rgb(227, 227, 227);
+
+}
+.caffee1 samp{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(176, 181, 30);
+}
+
+
+
+
+/* Seaction 5*/
+
+
+.section5{
+    background-image: url(couver.png);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.6s;
+}
+
+.section5.show7{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.couver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.couver .shopnow{
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: black;
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+/* section 6 */
+
+.section6{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeOpClo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    height: 80%;
+    width: 85%;
+    padding: 100px 150px;
+    background-image: url(BkiMg.png) ;
+    box-shadow: rgba(0, 0, 0, 0.364) 0px 60px 40px -7px;
+    
+}
+.times{
+    
+    background-color: rgba(0, 0, 0, 0.912);
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid transparent;
+    
+}
+.times .titletimes h2{
+    font-size: 20px;
+    color: rgb(161, 159, 27);
+}
+
+.times .days{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+}
+.days{
+    margin-top: 30px;
+}
+.days .day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.days .day .line{
+    width: 100px;
+    height: 1px;
+    background-color: rgba(117, 91, 41, 0.626);
+    margin-bottom: -12px;
+}
+
+
+.day h2{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.day h3{
+    font-size: 15px;
+    color: rgb(92, 80, 14);
+    font-weight: 400;
+}
+
+
+
+
+.Contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info h1{
+    font-size: 25px;
+    color: rgb(161, 159, 27);
+    margin-bottom: 10px;
+}
+.info hr{
+    margin-bottom: 10px;
+}
+
+.info h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.sing h2{
+    font-size: 23px;
+    color: rgb(161, 159, 27);
+}
+
+.sing input{
+    padding: 7px 40px;
+    outline: 0;
+    border: 1px solid transparent;
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
+
+
+.sing .singup{
+    margin-top: 5px;
+    padding: 8px 15px;
+    background-color: rgb(255, 255, 255);
+    outline: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.singup i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.media h2{
+    font-size: 25px;
+    color: rgb(161, 159, 27);
+}
+.iconsedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.iconsedia i{
+    font-size: 25px;
+    color: white;
+}
+
+
+.media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+    .links{
+        display: none;
+      
+    }
+    .icnsSocial i{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .logingorsingup{
+        display: none;
+    }
+    .srch{
+        display: none;
+    }
+    .scroll{
+        display: none;
+    }
+    .bodysection1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
